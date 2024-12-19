@@ -11,4 +11,5 @@ COPY . .
 EXPOSE 8000
 EXPOSE 8501
 
-CMD ["sh", "-c", "python dsa_start_api.py & streamlit run dsa_web_app.py --server.port 8501 --server.address 0.0.0.0"]
+# Executa a app
+CMD ["streamlit", "run", "app.py"]
